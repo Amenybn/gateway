@@ -1,0 +1,14 @@
+{
+  "name": "quickshop-gateway",
+  "version": "1.0.0",
+  "description": "API Gateway + interface web de QuickShop : point d'entrée unique qui route vers les microservices",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

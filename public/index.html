@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickShop · Boutique microservices</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/shop"><span class="logo">⚡</span> QuickShop</a>
+    <nav class="nav">
+      <a href="#/shop" data-page="shop">Boutique</a>
+      <a href="#/orders" data-page="orders">Commandes</a>
+      <a href="#/inventory" data-page="inventory">Inventaire</a>
+      <a href="#/architecture" data-page="architecture">Architecture</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" type="button" aria-label="Ouvrir le panier">🛒 Panier <span class="count" id="cartCount">0</span></button>
+  </header>
+
+  <main class="container" id="view"></main>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Panier">
+    <header class="drawer-head">
+      <h2>Votre panier</h2>
+      <button class="icon-btn" id="closeCart" type="button" aria-label="Fermer">✕</button>
+    </header>
+    <div class="drawer-body" id="cartBody"></div>
+  </aside>
+
+  <div class="toasts" id="toasts"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
